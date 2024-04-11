@@ -1,0 +1,34 @@
+{
+  "name": "amazon-coding-challenge",
+  "version": "1.0.0",
+  "description": "Automation Assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:tests": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Glamour1234/Amazon-Coding-Challenge.git"
+  },
+  "author": "Elohor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Glamour1234/Amazon-Coding-Challenge/issues"
+  },
+  "homepage": "https://github.com/Glamour1234/Amazon-Coding-Challenge#readme",
+  "devDependencies": {
+    "cypress": "^13.7.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/amazonBDD/stepDefinition/*.js",
+    "filterSpecs": true,
+    "omitFiltered": true
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.3",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress-xpath": "^2.0.1"
+  }
+}
